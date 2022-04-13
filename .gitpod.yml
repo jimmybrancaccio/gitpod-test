@@ -1,8 +1,1 @@
 image: jimmyb/workspace-laravel
-
-tasks:
-  - name: Install Dependencies
-    init: |
-      yarn install
-      composer install
-    command: php -S 0.0.0.0:8000 -t public
