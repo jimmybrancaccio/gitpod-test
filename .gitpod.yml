@@ -1,1 +1,6 @@
+
 image: jimmyb/workspace-laravel
+
+vscode:
+  extensions:
+    - esbenp.prettier-vscode
