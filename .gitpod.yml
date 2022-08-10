@@ -1,3 +1,6 @@
+tasks:
+  - name: Test
+    init: echo 'Hello world!'
 
 vscode:
   extensions:
