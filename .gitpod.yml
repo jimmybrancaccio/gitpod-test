@@ -1,7 +1,2 @@
-tasks:
-  - name: Set Env Vars
-    before: export ROOT_ENV=$(gp url 3000) && export HMR_URL=$(gp url 3003)
-
-vscode:
-  extensions:
-    - esbenp.prettier-vscode
+image:
+  file: .gitpod.Dockerfile
