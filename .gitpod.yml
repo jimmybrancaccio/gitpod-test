@@ -3,3 +3,17 @@ tasks:
       echo 'TODO: build project'
     command: |
       echo 'TODO: start app'
+      
+ports:
+  - name: frontend
+    description: The frontend website
+    port: 3000
+    onOpen: notify
+  - name: frontend second port
+    description: The frontend website
+    port: 3001
+    onOpen: ignore
+  - name: landing-pages
+    description: The new landing pages app
+    port: 4000
+    onOpen: notify
