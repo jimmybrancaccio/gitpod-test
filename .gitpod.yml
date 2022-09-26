@@ -1,5 +1,9 @@
-tasks:
-  - init: |
-      echo 'TODO: build project'
-    command: |
-      echo 'TODO: start app'
+image:
+  file: .gitpod.Dockerfile
+  
+vscode:
+  extensions:
+    - denoland.vscode-deno
+    - github.github-vscode-theme
+#tasks:
+#  - before: d="$HOME/.slack"; md="/workspace/${d##*/}"; mkdir -p "$md" && rm -rf "$d" && ln -sf "$md" "$d" && exit
