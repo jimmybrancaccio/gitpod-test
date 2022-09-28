@@ -2,8 +2,12 @@ image:
   file: .gitpod.Dockerfile
 
 tasks:
-  - name: Listen on Port 8080
-    before: sudo apt -y update && sudo apt -y install netcat && netcat -l 8080
+  - name: Install Netcat
+    before: |
+      sudo apt -y update
+      sudo apt -y install netcat
+    command:  netcat -l 8080
+  
 
 ports:
   - name: Web App
