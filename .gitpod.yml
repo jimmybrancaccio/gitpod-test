@@ -1,3 +1,9 @@
+tasks:
+  - init: |
+      echo 'TODO: build project'
+    command: |
+      echo 'TODO: start app'
+
 vscode:
   extensions:
     - github.github-vscode-theme
